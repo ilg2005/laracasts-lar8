@@ -24,7 +24,9 @@ Route::get('posts/{post}', function ($slug) {
 //        abort(404);
     }
 
-    $post = file_get_contents(__DIR__ . "/../resources/posts/{$slug}.html");
+    $post = cache()->remember("posts.{$slug}", now()->addSecond(10), fn() => file_get_contents($path));
+
+
     return view('post', [
         'post' => $post
     ]);
