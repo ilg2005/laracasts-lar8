@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="./app.css">
 </head>
 <body>
-<?= $post; ?>
+<article>
+    <h1><?= $post->title ?></h1>
+    <?= $post->body ?>
+</article>
 <a href="/">Go Back</a>
 </body>
 </html>

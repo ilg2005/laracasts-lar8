@@ -9,35 +9,11 @@
     <link rel="stylesheet" href="./app.css">
 </head>
 <body>
+<?php foreach ($posts as $post): ?>
 <article>
-    <h1><a href="/posts/my-first-post">My First Post</a></h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa deserunt dolores ducimus eius nobis
-        officiis omnis perferendis, quas quia, quis quos repudiandae soluta ullam vel vitae voluptatem. Ad alias aliquam
-        atque consectetur cupiditate dolorem doloremque dolorum eaque earum eveniet excepturi facere id illo ipsam ipsum
-        iusto laboriosam laborum libero maxime molestiae obcaecati odio odit officia omnis praesentium quas quasi qui
-        quos recusandae, suscipit temporibus ut voluptas voluptatem? Adipisci debitis delectus ducimus eum iusto labore
-        non sed tempora ut voluptatibus!</p>
-
+    <a href="/posts/<?= $post->slug ?>"><h1><?= $post->title ?></h1></a>
+    <p><?= $post->excerpt ?></p>
 </article>
-<article>
-    <h1><a href="/posts/my-second-post">My Second Post</a></h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa deserunt dolores ducimus eius nobis
-        officiis omnis perferendis, quas quia, quis quos repudiandae soluta ullam vel vitae voluptatem. Ad alias aliquam
-        atque consectetur cupiditate dolorem doloremque dolorum eaque earum eveniet excepturi facere id illo ipsam ipsum
-        iusto laboriosam laborum libero maxime molestiae obcaecati odio odit officia omnis praesentium quas quasi qui
-        quos recusandae, suscipit temporibus ut voluptas voluptatem? Adipisci debitis delectus ducimus eum iusto labore
-        non sed tempora ut voluptatibus!</p>
-
-</article>
-<article>
-    <h1><a href="/posts/my-third-post">My Third Post</a></h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa deserunt dolores ducimus eius nobis
-        officiis omnis perferendis, quas quia, quis quos repudiandae soluta ullam vel vitae voluptatem. Ad alias aliquam
-        atque consectetur cupiditate dolorem doloremque dolorum eaque earum eveniet excepturi facere id illo ipsam ipsum
-        iusto laboriosam laborum libero maxime molestiae obcaecati odio odit officia omnis praesentium quas quasi qui
-        quos recusandae, suscipit temporibus ut voluptas voluptatem? Adipisci debitis delectus ducimus eum iusto labore
-        non sed tempora ut voluptatibus!</p>
-
-</article>
+<?php endforeach; ?>
 </body>
 </html>
