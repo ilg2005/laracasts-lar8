@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ URL::to('/app.css') }}">
 </head>
 <body>
+    @yield('banner')
     @yield('content')
 </body>
 </html>
