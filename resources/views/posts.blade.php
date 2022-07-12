@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="./app.css">
 </head>
 <body>
-<?php foreach ($posts as $post): ?>
-<article>
-    <a href="/posts/<?= $post->slug ?>"><h1><?= $post->title ?></h1></a>
-    <p><?= $post->excerpt ?></p>
-</article>
-<?php endforeach; ?>
+@foreach ($posts as $post)
+    <article>
+        <a href="/posts/{{$post->slug}}"><h1>{{$post->title}}</h1></a>
+        <p>{{$post->excerpt}}</p>
+    </article>
+@endforeach
 </body>
 </html>
