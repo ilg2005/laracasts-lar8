@@ -16,7 +16,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        User::truncate();
+        Post::factory(5)->create();
+        /*User::truncate();
         Category::truncate();
         Post::truncate();
 
@@ -60,6 +61,6 @@ class DatabaseSeeder extends Seeder
             'excerpt' => 'Lorem ipsum....',
             'body' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa deserunt dolores ducimus eius nobis officiis omnis perferendis, quas quia, quis quos repudiandae soluta ullam vel vitae voluptatem. Ad alias aliquam atque consectetur cupiditate dolorem doloremque dolorum eaque earum eveniet excepturi facere id illo ipsam ipsum iusto laboriosam laborum libero ',
             'published_at' => '2022-03-10'
-        ]);
+        ]);*/
     }
 }
