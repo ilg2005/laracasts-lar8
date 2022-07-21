@@ -13,3 +13,7 @@ L
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 =
 composer.json,3\9\3957b91a0d8450cea0115cfd5af69eac90d75897
+[
++resources/views/components/layout.blade.php,7\5\750c76d1c2a0a52a55da1ce20d7cb1fb5dd07904
+E
+resources/css/app.css,f\b\fb832949a8835b7bba860cb482ee63cd29bba09b
