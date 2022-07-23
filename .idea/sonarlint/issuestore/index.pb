@@ -23,8 +23,6 @@ R
 "resources/posts/my-third-post.html,9\0\90bd8c5ce82ac34327a3d493cae62e1c1425266a
 S
 #app/Http/Controllers/Controller.php,2\e\2ed23e1749f02eb8e561f0a531d07863e7cf9fb9
-l
-<database/migrations/2022_07_14_100408_create_posts_table.php,1\7\170cbea4e5d78db2adedf241b9bcd5f6f0f56695
 S
 #database/seeders/DatabaseSeeder.php,a\c\aca1efccd4101e0c9bdd34803577859ace08ef45
 R

@@ -22,7 +22,6 @@ class PostFactory extends Factory
             'category_id' => Category::factory(),
             'excerpt' => $this->faker->sentence(10),
             'body' => $this->faker->paragraphs(3, true),
-            'published_at' => $this->faker->dateTime
         ];
     }
 }
